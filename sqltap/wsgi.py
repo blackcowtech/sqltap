@@ -12,6 +12,10 @@ except ImportError:
 
 from werkzeug.wrappers import Response
 
+import sys
+reload(sys)
+sys.setdefaultencoding('ISO-8859-1')
+
 
 class SQLTapMiddleware(object):
     """ SQLTap dashboard middleware for WSGI applications.
